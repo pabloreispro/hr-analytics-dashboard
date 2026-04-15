@@ -1,0 +1,22 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["BaseFuncionarios"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table BaseFuncionarios
+ref table DateTableTemplate_155834b1-9672-4218-ab91-15b237c2f17b
+ref table LocalDateTable_f0dfc4bb-c5c3-4165-8f91-30ef92705417
+ref table LocalDateTable_9d1a9c16-eeb8-43ce-a6b1-d41db881858e
+ref table LocalDateTable_10d6b762-305d-4064-9550-b7d03066d09e
+
+ref cultureInfo pt-BR
+

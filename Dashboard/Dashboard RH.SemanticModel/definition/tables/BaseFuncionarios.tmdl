@@ -1,0 +1,258 @@
+table BaseFuncionarios
+	lineageTag: b8fefa76-0757-4b08-a6db-5d85f5f96844
+
+	column 'ID RH'
+		dataType: int64
+		formatString: 0
+		lineageTag: d08765a0-9ba5-4d93-9d65-029d370ea31c
+		summarizeBy: sum
+		sourceColumn: ID RH
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nome Completo'
+		dataType: string
+		lineageTag: 07761a45-bbde-47b8-a59e-33d3bb1c03fa
+		summarizeBy: none
+		sourceColumn: Nome Completo
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Estado Civil'
+		dataType: string
+		lineageTag: ce74340a-4ab9-4aab-b5d4-c57db49be4eb
+		summarizeBy: none
+		sourceColumn: Estado Civil
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sexo
+		dataType: string
+		lineageTag: b4374fc6-2901-451b-894d-fe3429cc7566
+		summarizeBy: none
+		sourceColumn: Sexo
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Data de Nascimento'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 7ba54ac2-63f5-4e1f-89dc-3ffb74f3f031
+		summarizeBy: none
+		sourceColumn: Data de Nascimento
+
+		variation Variation
+			isDefault
+			relationship: 5e7d1eb4-306c-460f-8aa3-ea25db7238cf
+			defaultHierarchy: LocalDateTable_f0dfc4bb-c5c3-4165-8f91-30ef92705417.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Endereço
+		dataType: string
+		lineageTag: 146cc3e3-d6cf-431d-a1d3-c40166fcdb4c
+		summarizeBy: none
+		sourceColumn: Endereço
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Data de Contratacao'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 317d37ce-249b-4959-b92d-770fa8bc5bde
+		summarizeBy: none
+		sourceColumn: Data de Contratacao
+
+		variation Variation
+			isDefault
+			relationship: 98fd156b-c6a5-42e3-9c96-e8fbd17393eb
+			defaultHierarchy: LocalDateTable_9d1a9c16-eeb8-43ce-a6b1-d41db881858e.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Data de Demissao'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 974af1be-e2ec-4d2c-900a-37bfc82cb684
+		summarizeBy: none
+		sourceColumn: Data de Demissao
+
+		variation Variation
+			isDefault
+			relationship: d54373e0-8795-4cfd-9e2f-aa7ecde60556
+			defaultHierarchy: LocalDateTable_10d6b762-305d-4064-9550-b7d03066d09e.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Salario Base'
+		dataType: int64
+		formatString: 0
+		lineageTag: d84e9f2e-f808-42b8-b290-8874760f3194
+		summarizeBy: sum
+		sourceColumn: Salario Base
+
+		annotation SummarizationSetBy = Automatic
+
+	column Impostos
+		dataType: double
+		lineageTag: 6265e396-d36c-40c9-bb66-53ce6cbf3b2f
+		summarizeBy: sum
+		sourceColumn: Impostos
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Beneficios
+		dataType: double
+		lineageTag: 003a23d6-ca0a-461d-bbf2-d29c2d6fa171
+		summarizeBy: sum
+		sourceColumn: Beneficios
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column VT
+		dataType: double
+		lineageTag: 59a79c67-2d53-43ae-b942-f49889878591
+		summarizeBy: sum
+		sourceColumn: VT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column VR
+		dataType: double
+		lineageTag: a99b23bc-d0b4-4704-82d7-ec6f2845e388
+		summarizeBy: sum
+		sourceColumn: VR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Cargo
+		dataType: string
+		lineageTag: d188acc1-b950-4a17-9a8d-4c131948eb6c
+		summarizeBy: none
+		sourceColumn: Cargo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nível
+		dataType: string
+		lineageTag: 0af9b50c-8c00-49b3-82de-12a9090241a7
+		summarizeBy: none
+		sourceColumn: Nível
+
+		annotation SummarizationSetBy = Automatic
+
+	column Área
+		dataType: string
+		lineageTag: c201fc32-afac-4d2b-bf29-577aa1c71395
+		summarizeBy: none
+		sourceColumn: Área
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ferias Acumuladas'
+		dataType: int64
+		formatString: 0
+		lineageTag: 51cca457-a39a-4acc-ae8b-e1325ba9e8a6
+		summarizeBy: sum
+		sourceColumn: Ferias Acumuladas
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Horas Extras'
+		dataType: int64
+		formatString: 0
+		lineageTag: 42aa08c8-d3ae-4d2e-959a-c06ff2c48d7e
+		summarizeBy: sum
+		sourceColumn: Horas Extras
+
+		annotation SummarizationSetBy = Automatic
+
+	column Imagem
+		dataType: string
+		lineageTag: f5082646-3057-48ab-af0d-f0db1f4d8c14
+		summarizeBy: none
+		sourceColumn: Imagem
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Avaliação do Funcionário'
+		dataType: double
+		lineageTag: 0512a62d-7864-4616-9699-af3b0218a5eb
+		summarizeBy: sum
+		sourceColumn: Avaliação do Funcionário
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Trabalho em Equipe'
+		dataType: int64
+		formatString: 0
+		lineageTag: f8583c16-f118-4ea7-ba08-31f380007c52
+		summarizeBy: sum
+		sourceColumn: Trabalho em Equipe
+
+		annotation SummarizationSetBy = Automatic
+
+	column Liderança
+		dataType: int64
+		formatString: 0
+		lineageTag: 2d955c7f-e52a-4990-a5cc-e4ba319a2cfe
+		summarizeBy: sum
+		sourceColumn: Liderança
+
+		annotation SummarizationSetBy = Automatic
+
+	column Comunicação
+		dataType: int64
+		formatString: 0
+		lineageTag: 31617d12-92fb-46df-bbee-44f7c12ed4e9
+		summarizeBy: sum
+		sourceColumn: Comunicação
+
+		annotation SummarizationSetBy = Automatic
+
+	column Iniciativa
+		dataType: int64
+		formatString: 0
+		lineageTag: 98c7764e-dc2f-4a23-a346-b899f5df1484
+		summarizeBy: sum
+		sourceColumn: Iniciativa
+
+		annotation SummarizationSetBy = Automatic
+
+	column Organização
+		dataType: int64
+		formatString: 0
+		lineageTag: 8cc903de-6a69-4524-bf51-ceec742aaf40
+		summarizeBy: sum
+		sourceColumn: Organização
+
+		annotation SummarizationSetBy = Automatic
+
+	partition BaseFuncionarios = m
+		mode: import
+		source =
+				let
+				    Fonte = Excel.Workbook(Web.Contents("https://github.com/pabloreispro/hr-analytics-dashboard/raw/refs/heads/main/Data/BaseFuncionarios.xlsx"), null, true),
+				    BaseFuncionarios_Table = Fonte{[Item="BaseFuncionarios",Kind="Table"]}[Data],
+				    #"Tipo Alterado" = Table.TransformColumnTypes(BaseFuncionarios_Table,{{"ID RH", Int64.Type}, {"Nome Completo", type text}, {"Estado Civil", type text}, {"Sexo", type text}, {"Data de Nascimento", type date}, {"Endereço", type text}, {"Data de Contratacao", type date}, {"Data de Demissao", type date}, {"Salario Base", Int64.Type}, {"Impostos", type number}, {"Beneficios", type number}, {"VT", type number}, {"VR", type number}, {"Cargo", type text}, {"Nível", type text}, {"Área", type text}, {"Ferias Acumuladas", Int64.Type}, {"Horas Extras", Int64.Type}, {"Imagem", type text}, {"Avaliação do Funcionário", type number}, {"Trabalho em Equipe", Int64.Type}, {"Liderança", Int64.Type}, {"Comunicação", Int64.Type}, {"Iniciativa", Int64.Type}, {"Organização", Int64.Type}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+
